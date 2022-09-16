@@ -1,0 +1,29 @@
+<div class="container">
+   <div class="box-1"> A </div>
+   <div class="box-2"> B </div>
+   <div class="box-3"> C </div>
+</div>
+
+<style>
+   .container {
+      height: 100vh;
+      background-color: beige;
+
+      display: flex;
+      gap: 25px;
+   }
+
+   [class ^="box-"] {
+      width: 140px;
+      height: 140px;
+      background-color: skyblue;
+      border: 2px solid black;
+      font-size: 65px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   body { margin: 0; }
+</style>

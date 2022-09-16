@@ -1,0 +1,47 @@
+<div class="container">
+   <div class="box-1"> A </div>
+   <div class="box-2"> B </div>
+   <div class="box-3"> C </div>
+   <div class="box-4"> D </div>
+</div>
+
+<style>
+   .container {
+      height: 100vh;
+      background-color: beige;
+
+      display: grid;
+      gap: 50px;
+
+      grid-template-rows: 200px 200px;
+      grid-template-columns: 200px 200px;
+
+      /* Change the value 👇 here to see results */
+      align-content: start;
+      /* align-content: end; */
+      /* align-content: center; */
+      /* align-content: stretch; */
+      /* align-content: space-between; */
+      /* align-content: space-around; */
+      /* align-content: space-evenly; */
+   }
+
+   [class^="box-"] {
+      background-color: skyblue;
+
+      /* To place the letter at the center */
+      display: grid;
+      place-items: center;
+   }
+
+   body {
+      font-family: sans-serif;
+      font-size: 40px;
+   }
+
+   * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+   }
+</style>
